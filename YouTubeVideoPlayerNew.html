@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Play and close it</title>
+        <script>
+function loaded()
+{
+    window.setTimeout(CloseMe, 45000);
+}
+
+function CloseMe()
+{
+    window.close();
+}
+</script>
+        <script type="text/javascript">
+setTimeout(function ( ){  self.close();}, 45000 );
+</script>
+    </head>
+    <body onLoad="loaded()">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ei6Z7orCpPk?autoplay=1"
+        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </body>
+</html>
